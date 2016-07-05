@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 RUN gem install jekyll therubyracer sass susy compass breakpoint mustache bourbon neat
-RUN npm install -g eslint nodemon node-inspector jade grunt gulp bower browser-sync foundation-cli ember-cli express-generator http-server harp
+RUN npm install -g eslint nodemon node-inspector jade webpack grunt gulp bower browser-sync foundation-cli ember-cli express-generator http-server harp
 
 ENV TERM=linux
 
