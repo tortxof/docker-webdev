@@ -12,7 +12,7 @@ ENV TERM=linux
 
 ENV HOME=/host
 
-VOLUME ["/host", "/usr/local/lib/node_modules"]
+VOLUME ["/host"]
 
 WORKDIR /host
 
