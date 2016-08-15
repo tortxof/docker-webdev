@@ -1,6 +1,14 @@
 FROM tortxof/ruby-node
 MAINTAINER Daniel Jones <tortxof@gmail.com>
 
+RUN mkdir -p /usr/local/heroku && \
+    cd /usr/local/heroku && \
+    wget -qO- https://s3.amazonaws.com/assets.heroku.com/heroku-client/heroku-client.tgz | tar xz && \
+    mv heroku-client/* . && \
+    rm -rf heroku-client
+
+ENV PATH=/usr/local/heroku/bin:$PATH
+
 RUN apt-get update && \
     apt-get install -y sudo && \
     apt-get clean && \
