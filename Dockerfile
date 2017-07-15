@@ -9,7 +9,7 @@ RUN mkdir -p /usr/local/heroku && \
 
 ENV PATH=/usr/local/heroku/bin:$PATH
 
-RUN wget -qO /usr/local/bin/stout https://github.com/EagerIO/Stout/releases/download/v1.3.0/stout-linux && \
+RUN wget -qO /usr/local/bin/stout https://github.com/EagerIO/Stout/releases/download/v1.3.1/stout-linux && \
     chmod +x /usr/local/bin/stout
 
 RUN apt-get update && \
