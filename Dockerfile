@@ -34,7 +34,7 @@ RUN apt-get update && \
 
 RUN pip install awscli
 RUN gem install -f jekyll therubyracer sass susy compass breakpoint mustache bourbon neat
-RUN npm install -g eslint nodemon node-inspector babel-cli jade webpack grunt gulp bower browser-sync autoprefixer-cli foundation-cli ember-cli express-generator http-server harp brunch
+RUN npm install -g eslint nodemon node-inspector babel-cli jade webpack grunt gulp bower browser-sync autoprefixer-cli foundation-cli ember-cli express-generator http-server harp brunch create-react-app
 
 ENV TERM=linux
 
