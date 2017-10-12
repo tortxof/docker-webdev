@@ -44,7 +44,7 @@ RUN npm install -g \
   nodemon \
   node-inspector \
   babel-cli \
-  jade \
+  pug \
   webpack \
   grunt \
   gulp \
