@@ -1,5 +1,5 @@
 FROM tortxof/ruby-node
-MAINTAINER Daniel Jones <tortxof@gmail.com>
+LABEL maintainer="Daniel Jones <tortxof@gmail.com>"
 
 RUN mkdir -p /usr/local/heroku && \
     cd /usr/local/heroku && \
