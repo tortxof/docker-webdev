@@ -1,13 +1,7 @@
 FROM tortxof/ruby-node
 LABEL maintainer="Daniel Jones <tortxof@gmail.com>"
 
-RUN mkdir -p /usr/local/heroku && \
-    cd /usr/local/heroku && \
-    wget -qO- https://s3.amazonaws.com/assets.heroku.com/heroku-client/heroku-client.tgz | tar xz && \
-    mv heroku-client/* . && \
-    rm -rf heroku-client
-
-ENV PATH=/usr/local/heroku/bin:$PATH
+RUN wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 RUN wget -qO /usr/local/bin/stout https://github.com/EagerIO/Stout/releases/download/v1.3.1/stout-linux && \
     chmod +x /usr/local/bin/stout
