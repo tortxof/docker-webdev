@@ -41,6 +41,7 @@ RUN gem install -f \
 
 RUN npm install -g \
   eslint \
+  prettier \
   nodemon \
   node-inspector \
   babel-cli \
