@@ -58,7 +58,8 @@ RUN npm install -g \
   http-server \
   harp \
   brunch \
-  create-react-app
+  create-react-app \
+  serverless
 
 ENV TERM=linux
 
