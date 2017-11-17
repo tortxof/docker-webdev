@@ -26,7 +26,9 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install awscli
+RUN pip install \
+	awscli \
+	pipenv
 
 RUN gem install -f \
   jekyll \
