@@ -63,6 +63,8 @@ RUN npm install -g \
   create-react-app \
   serverless
 
+ENV SHELL=/bin/bash
+
 ENV TERM=linux
 
 ENV HOME=/host
