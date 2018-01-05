@@ -41,17 +41,13 @@ RUN gem install -f \
   bourbon \
   neat
 
-RUN npm install -g \
+RUN yarn global add \
   eslint \
   prettier \
   nodemon \
-  node-inspector \
   babel-cli \
-  pug \
-  webpack \
   grunt \
   gulp \
-  bower \
   browser-sync \
   autoprefixer-cli \
   foundation-cli \
