@@ -57,6 +57,7 @@ RUN yarn global add \
   harp \
   brunch \
   create-react-app \
+  vue-cli \
   serverless
 
 ENV SHELL=/bin/bash
