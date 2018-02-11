@@ -1,6 +1,12 @@
 FROM tortxof/ruby-node
 LABEL maintainer="Daniel Jones <tortxof@gmail.com>"
 
+RUN curl -L \
+    https://github.com/zyedidia/micro/releases/download/v1.4.0/micro-1.4.0-linux64.tar.gz \
+    | tar -xzOf - micro-1.4.0/micro \
+    > /usr/local/bin/micro && \
+    chmod +rx /usr/local/bin/micro
+
 RUN wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 RUN wget -qO /usr/local/bin/stout https://github.com/EagerIO/Stout/releases/download/v1.3.1/stout-linux && \
