@@ -37,6 +37,7 @@ RUN pip install \
 	pipenv
 
 RUN gem install -f \
+  bundler \
   jekyll \
   therubyracer \
   sass \
