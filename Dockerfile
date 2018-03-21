@@ -65,6 +65,7 @@ RUN yarn global add \
   brunch \
   create-react-app \
   vue-cli \
+  surge \
   serverless
 
 ENV SHELL=/bin/bash
