@@ -9,7 +9,7 @@ RUN curl -L \
 
 RUN wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
-RUN wget -qO /usr/local/bin/stout https://github.com/EagerIO/Stout/releases/download/v1.3.1/stout-linux && \
+RUN wget -qO /usr/local/bin/stout https://github.com/cloudflare/Stout/releases/download/v1.3.2/stout-linux && \
     chmod +x /usr/local/bin/stout
 
 RUN apt-get update && \
