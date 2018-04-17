@@ -66,7 +66,8 @@ RUN yarn global add \
   create-react-app \
   vue-cli \
   surge \
-  serverless
+  serverless \
+  claudia
 
 ENV SHELL=/bin/bash
 
