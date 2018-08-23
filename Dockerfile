@@ -7,6 +7,10 @@ RUN curl -L \
     > /usr/local/bin/micro && \
     chmod +rx /usr/local/bin/micro
 
+RUN curl -L \
+    https://cli.netlify.com/download/latest/linux \
+    | tar -xz -C /usr/local/bin
+
 RUN wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 RUN wget -qO /usr/local/bin/stout https://github.com/cloudflare/Stout/releases/download/v1.3.2/stout-linux && \
