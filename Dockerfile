@@ -16,8 +16,6 @@ RUN wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 RUN wget -qO /usr/local/bin/stout https://github.com/cloudflare/Stout/releases/download/v1.3.2/stout-linux && \
     chmod +x /usr/local/bin/stout
 
-RUN wget -qO- https://cli.netlify.com/download/latest/linux | tar -xzf - -C /usr/local/bin
-
 RUN apt-get update && \
     apt-get install -y \
       apt-transport-https \
